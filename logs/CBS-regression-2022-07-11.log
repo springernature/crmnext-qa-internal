@@ -1,0 +1,118 @@
+[INFO ] 2022-07-11 17:54:22.511 [main] BaseDriver - @@BeforeTest executed
+[INFO ] 2022-07-11 17:54:56.082 [main] BaseDriver - @AfterMethod executed
+[INFO ] 2022-07-11 17:54:56.124 [main] ReadExcel - Creating excel object:-D:\GradleWorkspace\Selenium\TestData\TestData.xlsx
+[INFO ] 2022-07-11 17:54:56.128 [main] BaseDriver - AfterClass executed
+[INFO ] 2022-07-11 17:54:56.128 [main] BaseDriver - AfterTest executed
+[INFO ] 2022-07-11 18:04:32.537 [main] BaseDriver - @@BeforeTest executed
+[INFO ] 2022-07-11 18:05:25.159 [main] BaseDriver - @AfterMethod executed
+[INFO ] 2022-07-11 18:05:25.270 [main] ReadExcel - Creating excel object:-D:\GradleWorkspace\Selenium\TestData\TestData.xlsx
+[ERROR] 2022-07-11 18:05:56.877 [main] BaseDriver - Catching
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of [[ChromeDriver: chrome on WINDOWS (b77c79af4f35d7ff23787218e73fb5d8)] -> xpath: //a[@title='New']] (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:81) ~[selenium-support-3.11.0.jar:?]
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271) ~[selenium-support-3.11.0.jar:?]
+	at com.sn.config.BaseDriver.waitForElementVisibility(BaseDriver.java:228) ~[classes/:?]
+	at executetests.Salesforce.createLead(Salesforce.java:143) ~[test-classes/:?]
+	at executetests.Salesforce.createNewLead(Salesforce.java:271) ~[test-classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:564) ~[?:?]
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133) ~[testng-7.4.0.jar:7.4.0]
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598) ~[testng-7.4.0.jar:7.4.0]
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173) ~[testng-7.4.0.jar:7.4.0]
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46) ~[testng-7.4.0.jar:7.4.0]
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824) ~[testng-7.4.0.jar:7.4.0]
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146) ~[testng-7.4.0.jar:7.4.0]
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146) ~[testng-7.4.0.jar:7.4.0]
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128) ~[testng-7.4.0.jar:7.4.0]
+	at java.util.ArrayList.forEach(ArrayList.java:1511) ~[?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:794) ~[testng-7.4.0.jar:7.4.0]
+	at org.testng.TestRunner.run(TestRunner.java:596) ~[testng-7.4.0.jar:7.4.0]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377) ~[testng-7.4.0.jar:7.4.0]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371) ~[testng-7.4.0.jar:7.4.0]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332) ~[testng-7.4.0.jar:7.4.0]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276) ~[testng-7.4.0.jar:7.4.0]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53) ~[testng-7.4.0.jar:7.4.0]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96) ~[testng-7.4.0.jar:7.4.0]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212) ~[testng-7.4.0.jar:7.4.0]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134) ~[testng-7.4.0.jar:7.4.0]
+	at org.testng.TestNG.runSuites(TestNG.java:1063) ~[testng-7.4.0.jar:7.4.0]
+	at org.testng.TestNG.run(TestNG.java:1031) ~[testng-7.4.0.jar:7.4.0]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) ~[testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251) ~[testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77) ~[testng-remote.jar:?]
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@title='New']"}
+  (Session info: chrome=103.0.5060.114)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'PG02802S', ip: '10.11.27.150', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\mgp0966\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:58089}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b77c79af4f35d7ff23787218e73fb5d8
+*** Element info: {Using=xpath, value=//a[@title='New']}
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64) ~[?:?]
+	at jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?]
+	at java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500) ~[?:?]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:481) ~[?:?]
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187) ~[selenium-remote-driver-3.11.0.jar:?]
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122) ~[selenium-remote-driver-3.11.0.jar:?]
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49) ~[selenium-remote-driver-3.11.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158) ~[selenium-remote-driver-3.11.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83) ~[selenium-remote-driver-3.11.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545) ~[selenium-remote-driver-3.11.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319) ~[selenium-remote-driver-3.11.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:421) ~[selenium-remote-driver-3.11.0.jar:?]
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361) ~[selenium-api-3.11.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311) ~[selenium-remote-driver-3.11.0.jar:?]
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69) ~[selenium-support-3.11.0.jar:?]
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38) ~[selenium-support-3.11.0.jar:?]
+	at com.sun.proxy.$Proxy31.isDisplayed(Unknown Source) ~[?:?]
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:315) ~[selenium-support-3.11.0.jar:?]
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:44) ~[selenium-support-3.11.0.jar:?]
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:301) ~[selenium-support-3.11.0.jar:?]
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:298) ~[selenium-support-3.11.0.jar:?]
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248) ~[selenium-support-3.11.0.jar:?]
+	... 31 more
+[INFO ] 2022-07-11 18:06:51.638 [main] GenericHelper - org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[@name='Lead.Accept_Reject']"}
+  (Session info: chrome=103.0.5060.114)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'PG02802S', ip: '10.11.27.150', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\mgp0966\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:58089}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b77c79af4f35d7ff23787218e73fb5d8
+*** Element info: {Using=xpath, value=//button[@name='Lead.Accept_Reject']}
+[INFO ] 2022-07-11 18:06:51.640 [main] BaseDriver - @AfterMethod executed
+[INFO ] 2022-07-11 18:06:51.753 [main] BaseDriver - AfterClass executed
+[INFO ] 2022-07-11 18:06:51.753 [main] BaseDriver - AfterTest executed
+[INFO ] 2022-07-11 18:09:45.281 [main] BaseDriver - @@BeforeTest executed
+[INFO ] 2022-07-11 18:10:47.674 [main] BaseDriver - @AfterMethod executed
+[INFO ] 2022-07-11 18:10:47.841 [main] ReadExcel - Creating excel object:-D:\GradleWorkspace\Selenium\TestData\TestData.xlsx
+[INFO ] 2022-07-11 18:11:55.281 [main] GenericHelper - org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[@name='Lead.Accept_Reject']"}
+  (Session info: chrome=103.0.5060.114)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'PG02802S', ip: '10.11.27.150', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\mgp0966\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:58273}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 28fe25f1ef056d98b43476133bc17f2d
+*** Element info: {Using=xpath, value=//button[@name='Lead.Accept_Reject']}
+[INFO ] 2022-07-11 18:11:55.283 [main] BaseDriver - @AfterMethod executed
+[INFO ] 2022-07-11 18:11:55.429 [main] BaseDriver - AfterClass executed
+[INFO ] 2022-07-11 18:11:55.430 [main] BaseDriver - AfterTest executed
+[INFO ] 2022-07-11 18:22:52.445 [main] BaseDriver - @@BeforeTest executed
+[INFO ] 2022-07-11 18:23:55.065 [main] BaseDriver - @AfterMethod executed
+[INFO ] 2022-07-11 18:23:55.348 [main] ReadExcel - Creating excel object:-D:\GradleWorkspace\Selenium\TestData\TestData.xlsx
+[INFO ] 2022-07-11 18:24:55.009 [main] GenericHelper - org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[@name='Lead.Accept_Reject']"}
+  (Session info: chrome=103.0.5060.114)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'PG02802S', ip: '10.11.27.150', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\mgp0966\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:52957}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a3e6efd0587aaac21215838c7ceb6185
+*** Element info: {Using=xpath, value=//button[@name='Lead.Accept_Reject']}
+[INFO ] 2022-07-11 18:24:55.011 [main] BaseDriver - @AfterMethod executed
+[INFO ] 2022-07-11 18:24:55.124 [main] BaseDriver - AfterClass executed
+[INFO ] 2022-07-11 18:24:55.124 [main] BaseDriver - AfterTest executed

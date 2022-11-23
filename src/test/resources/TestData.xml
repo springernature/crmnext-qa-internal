@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TC Mark="true" TCName="ChangeContractTypeAndValidate">
+	<TestData Iteration="1" Mark="True">
+		<PostURI>https://contract-service-test.springernature.app/partner</PostURI>
+		<x-tenant-id>NETWEBSHOP</x-tenant-id>
+		<JSONBODY><![CDATA[{"person":
+				  { "firstName":"Haris",
+					"lastName": "Wells",
+					"title": "1",
+					"academicTitleAdditional": "PR",
+					"academicTitle": "DR",
+					"organization": "University of Washington",
+					"department": "Research"
+				   },
+				 
+				 "streetAddress": {
+					"building": "",
+					"room": "",
+					"floor": "",
+					"street": "Grabengasse",
+					"houseNum": "1",
+					"streetAdditional": "",
+					"houseNumAdditional": "",
+					"district": "",
+					"postalCode": "69117",
+					"city": "Heidelberg",
+					"region": "",
+					"country": "DE",
+					"addressOverruled":false
+				 },
+				"communication":
+				   {
+					  "telephone":"778758",
+					  "email":"harry.wells@starlabs.com"
+					},
+					"isAuthor": false,
+					"isBillTo":true,
+					"isShipTo": true,
+					"isCompanyContact":false,
+					"additionalSalesArea": "11450101",
+					"isNotSalesCustomer":false,
+					"bpType": "0001",
+					"secondLevel": "IC",
+					"vatRegistration": "DE811148419",
+					 "identifications":
+					 [{
+						"bpIdentificationType": "ZTHINK",
+						"bpIdentificationNumber": "1234567"
+					}
+				  ]
+				}]]>
+		</JSONBODY>
+	</TestData>
+	<TestData Iteration="2" Mark="True">
+		<PostURI>https://contract-service-test.springernature.app/partner</PostURI>
+		<x-tenant-id>NETWEBSHOP</x-tenant-id>
+		<JSONBODY><![CDATA[{
+			  "organization": {
+				"name1": "University of california",
+				"name2": "Research and Technology",
+				"name3": "For AI and Data science"
+			  
+			  },
+			 
+			   "streetAddress": 
+					{ 
+				"room": "1",
+							"building":"D",  
+							"floor":"9", 
+							"street":"Coleman street",
+				"streetAdditional": "2",
+							"houseNum":"1562", 
+				"houseNumAdditional": "902",
+							"district":"KINGS",
+							"city":"BROOKLYN", 
+							"region":"NY", 
+							"country":"US",
+				"postalCode": "11234",
+							"addressOverruled":true
+
+			  },
+			  "communication": {
+				"telephone": "660209876",
+				"email": "barry.allen214@unical.com"
+			  },
+			  "bpType": "0002",
+			  "secondLevel": "IA",
+			  
+			  "isNotSalesCustomer": false,
+			  "additionalSalesArea": "02930101",
+			  "isAuthor": false,
+			  "isCompanyContact": false,
+			  "isShipTo": true,
+			  "isBillTo": true,
+			  "identifications": [
+				{
+				  "bpIdentificationType": "ZTHINK",
+				  "bpIdentificationNumber": "BUP004"
+				}
+			  ]
+			}]]>
+		</JSONBODY>
+	</TestData>
+</TC>

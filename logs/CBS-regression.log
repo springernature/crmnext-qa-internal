@@ -1,0 +1,7 @@
+[INFO ] 2022-11-22 17:51:20.395 [main] BaseDriver - @@BeforeTest executed
+[INFO ] 2022-11-22 17:51:47.147 [main] BaseDriver - @AfterMethod executed
+[INFO ] 2022-11-22 17:51:47.252 [main] ReadExcel - Creating excel object:-C:\Users\skt8403\Downloads\Selenium_Maven\Selenium\TestData\TestData.xlsx
+[INFO ] 2022-11-22 17:52:43.374 [main] GenericHelper - element is displayed..[[ChromeDriver: chrome on WINDOWS (8395bace417bd0bd71d8ced01361347d)] -> xpath: //button[@name='Lead.Accept_Reject']]
+[INFO ] 2022-11-22 17:52:43.378 [main] BaseDriver - @AfterMethod executed
+[INFO ] 2022-11-22 17:52:43.601 [main] BaseDriver - AfterClass executed
+[INFO ] 2022-11-22 17:52:43.603 [main] BaseDriver - AfterTest executed
